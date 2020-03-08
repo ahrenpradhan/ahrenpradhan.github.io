@@ -8,50 +8,111 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Materialize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="nav-wrapper">
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li class="sidenav-trigger" data-target="slide-out"><a><i class="material-icons">menu</i></a></li>
-                </ul>
-                <a class="center pagetitle brand-logo">
-                    About Me
+    <div class=" containerImg container">
+        <header>
+            My Webpage
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <i class="material-icons menu" id="menu">menu</i>
                 </a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a>My Projects</a></li>
-                    <li class="active"><a>About Me</a></li>
+                <ul class="show-desktop hide-desktop">
+                    <li id="exit" class="exit-btn hide-desktop"><i class="material-icons">close</i></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">My Projects</a></li>
                 </ul>
+            </nav>
+        </header>
+        <section class="row">
+            <div class="col-md-7">
+                <h3>Hi</h3>
+                <h2>My name is Ahren Pradhan</h2>
+                <h3>A Software Developer Intern</h3>
+                <h4>
+                    I'm comfortable with most fundamental concepts of computer programming <br>
+                    but if i had a choice i'd either go as a fullstack engineer or a <br>
+                    computer network specialist
+                </h4>
             </div>
-        </nav>
-    </header>
-
-
-    <div class="aboutMe-container">
+            <div class="col-md-5">
+                <img src="IMG-20191109-WA0018.jpg" alt="profileImage" class="profileImg">
+            </div>
+        </section>
     </div>
-    
-    
-    
-    <div class="myProjects-container">my projects container</div>
-    <!-- additional components -->
-    <!-- side panel left -->
-    <ul id="slide-out" class="sidenav">
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-        <li><a href="#!">Second Link</a></li>
-        <li>
-            <div class="divider"></div>
-        </li>
-        <li><a class="subheader">Subheader</a></li>
-        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-    </ul>
-    <!-- extra scripts -->
-    <script src="index.js"></script>
+    <div class="white-container container">
+        <section class="row">
+            <div class="col-md-5">
+
+            </div>
+            <div class="col-md-7">
+                <h2><strong>BIO</strong></h2>
+                <h4>
+                    <p>
+                        My name is Ahren Pradhan. From a very young age, I had an interest in the field of Computer
+                        Science from the front-end perspective via HTML. Later I was introduced to several other
+                        languages and now I am in love with machine learning, server-client programming and more.
+                    </p>
+                    <p>
+                        I also have this hobby as a Music producer (DJ Mr.Z0d) which I use as a way to cool off my mind
+                        after a long day working on the desk.
+                    </p>
+                    <p>
+                        So here I am, still on my system doing something stupid maybe something new or odd, which may
+                        become handy as my life progresses.
+                        
+                    </p>
+                </h4>
+            </div>
+        </section>
+    </div>
+    <div class="grey-container container">
+        <section class="row">
+            <div class="col-md-7">
+                <h2><strong>PROJECTS AND INTERNSHIPS</strong></h2>
+                <h3>
+                    <ol>
+                        <li>
+                            GAME BASED CHANNEL ALLOCATION IN COGNITIVE RADIO WIRELESS SENSOR NETWORK (ON GOING MINI
+                            PROJECT)
+                            <h4>
+                                <p>April 2019 – December 2019</p>
+                                <p>Implementing WSN network and Game Theory</p>
+                            </h4>
+                        </li>
+                        <li>
+                            TWITTER DATA ANALYSIS – IIT GUWAHATI
+                            <h4>
+                                <p>May 2018 – July 2018</p>
+                                <p>Performance evaluation of various Sentiment analysis tools on social issues tweets and created a Sentiment Analysis Classifier using SVM, Naïve Bayes, and Logistic Regression.</p>
+                            </h4>
+                        </li>
+                        <li>
+                            WEB DEVELOPMENT – SIKKIM MANIPAL INSTITUTE OF TECHNOLOGY
+                            <h4>
+                                <p>January 2018 - June 2018</p>
+                                <p>
+                                        - Multilingual Code Editor (still under development)
+                                    <br> - Website development (team project) www.kaalrav19.in
+                                </p>
+                            </h4>
+                        </li>
+                    </ol>
+                </h3>
+            </div>
+            <div class="col-md-5"></div>
+        </section>
+
+    </div>
 </body>
 
 </html>

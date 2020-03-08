@@ -1,6 +1,29 @@
+.containerImg{
+    background: url(b1.jpg) no-repeat;
+    background-blend-mode: darken;
+}
+.container{
+    width: 100%;
+}
+.container section{
+    padding: 4em;
+}
+p{
+    padding-bottom: 2em;
+}
+.white-container{
+    background-color: rgb(243, 243, 243);
+}
 .pagetitle{
     margin-left:  2em;
 }
 .nav-wrapper ul a{
     padding-right: 4em;
+}
+ol li{
+    margin: 2em 0.5em 0px 0px;
+}
+ol li h4 p{
+    padding-left: 4em;
+    padding-bottom: 1em;
 }
