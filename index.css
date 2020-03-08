@@ -56,8 +56,12 @@ p{
     color: rgba(5, 5, 5, 0.863);
     padding-bottom: 10%;
 }
-.white-container section{
-    /* z-index: 3; */
+.cl{
+    display: flex;
+    justify-content: space-between;
+}
+.ci{
+    float: left;
 }
 .dark-container:before{
     content: "";
