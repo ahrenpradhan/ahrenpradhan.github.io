@@ -62,7 +62,7 @@ p{
     content: "";
     width: 15%;
     height: 15%;
-    background-color: rgba(5, 5, 5, 0.863);
+    background-color: rgb(39, 38, 38);
     position: absolute;
     top: -14.9%;
     right: 0;
@@ -80,15 +80,22 @@ p{
     z-index: -2;
 }
 .dark-container{
-    background-color: rgba(5, 5, 5, 0.863);
+    background-color: rgb(39, 38, 38);
     color: rgb(177, 175, 175);
     padding-top: 15%;
     border-top-left-radius: 10%;
     transform: skewY(-4deg);
-    margin-top: -3%;
+    padding-bottom: 5em;
+    z-index: -1;
 }
 .dark-container section{
     transform: skewY(+4deg);
+}
+.grey-container{
+    margin-top: -5em;
+    padding-top: 10%;
+    background-color:rgb(238, 238, 238); 
+    z-index: -1;
 }
 .pagetitle{
     margin-left:  2em;
