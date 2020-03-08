@@ -1,18 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 0px;
+    background-color: rgb(231, 229, 229);
+}
+.profileImg{
+    border-radius: 50%;
+}
 .containerImg{
     background: url(b1.jpg) no-repeat;
-    background-blend-mode: darken;
+    padding: 0px;
+    color: white;
+}
+.containerImg a{
+    color: white;
+}
+.containerImg header{
+    padding: 2em 2em 2em 2em;
+}
+.containerImg section{
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
 }
 .container{
     width: 100%;
 }
 .container section{
-    padding: 4em;
+    width: 100%;
+    padding: 2em;
+}
+.hide-mobile{
+    display: none;
+}
+.menu{
+    font-size: 35px;
+    margin-top: 60%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    list-style-type: none;
 }
 p{
+    line-height: 1.6em;
     padding-bottom: 2em;
 }
 .white-container{
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(231, 229, 229);
+    color: rgba(5, 5, 5, 0.863);
+    padding-bottom: 20%;
+}
+.white-container section{
+    /* z-index: 3; */
+}
+.dark-container:before{
+    content: "";
+    width: 15%;
+    height: 15%;
+    background-color: rgba(5, 5, 5, 0.863);
+    position: absolute;
+    top: -14.9%;
+    right: 0;
+    z-index: -3;
+}
+.dark-container:after{
+    content: "";
+    width: 30%;
+    height: 30%;
+    background-color: rgb(231, 229, 229);
+    position: absolute;
+    top: -30%;
+    right: 0;
+    border-radius: 50%;
+    z-index: -2;
+}
+.dark-container{
+    background-color: rgba(5, 5, 5, 0.863);
+    color: rgb(177, 175, 175);
+    padding-top: 15%;
+    border-top-left-radius: 10%;
+    transform: skewY(-4deg);
+    margin-top: -3%;
+}
+.dark-container section{
+    transform: skewY(+4deg);
 }
 .pagetitle{
     margin-left:  2em;
@@ -24,6 +100,6 @@ ol li{
     margin: 2em 0.5em 0px 0px;
 }
 ol li h4 p{
-    padding-left: 4em;
+    /* padding-left: 4em; */
     padding-bottom: 1em;
 }
