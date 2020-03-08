@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="index.css">
 </head>
@@ -15,16 +18,39 @@
     <header>
         <nav>
             <div class="nav-wrapper">
-                <a href="#" class="left brand-logo">Logo</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li class="sidenav-trigger" data-target="slide-out"><a><i class="material-icons">menu</i></a></li>
+                </ul>
+                <a class="center pagetitle brand-logo">
+                    About Me
+                </a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a>About Me</a></li>
                     <li><a>My Projects</a></li>
+                    <li class="active"><a>About Me</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <div class="container">Hello, I'm Ahren Pradhan</div>
 
+
+    <div class="aboutMe-container">
+    </div>
+    
+    
+    
+    <div class="myProjects-container">my projects container</div>
+    <!-- additional components -->
+    <!-- side panel left -->
+    <ul id="slide-out" class="sidenav">
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+    <!-- extra scripts -->
     <script src="index.js"></script>
 </body>
 

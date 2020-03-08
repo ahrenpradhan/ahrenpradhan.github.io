@@ -1,3 +1,6 @@
-.nav-wrapper{
-    margin: 0em 2em;
+.pagetitle{
+    margin-left:  2em;
+}
+.nav-wrapper ul a{
+    padding-right: 4em;
 }
