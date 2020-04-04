@@ -1,0 +1,21 @@
+.MainSection {
+    display: flex;
+    flex-direction: row;
+    margin: $m-size;
+}
+
+//side panel
+.SidePanel {
+    width: 25%;
+    margin: 0 $s-size;
+    background: lighten($light,7);
+    padding: $m-size;
+}
+
+//main panel
+.MainPanel {
+    flex-grow: 1;
+    margin: 0 $s-size;
+    background: darken($lighter,3);
+    padding: $m-size;
+}
