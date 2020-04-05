@@ -10,11 +10,11 @@ export default (props) => (
                 if((i+1)%2){
                     return (<div className='MainSection'>
                         <SidePanel data={e[0]}/>
-                        <MainPanel data={e[1]}/>
+                        <MainPanel data={e.slice(1)}/>
                     </div>)
                 } else {
                     return (<div className='MainSection'>
-                        <MainPanel data={e[1]}/>
+                        <MainPanel data={e.slice(1)}/>
                         <SidePanel data={e[0]}/>
                     </div>)
                 }

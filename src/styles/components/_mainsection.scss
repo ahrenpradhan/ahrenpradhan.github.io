@@ -1,12 +1,33 @@
 .MainSection {
+    position: relative;
     display: flex;
     flex-direction: row;
-    margin: $m-size;
+    padding-bottom: $m-size;
+    margin: $m-size $m-size $m-size $m-size;
+    border-bottom: 1px solid rgb(180, 180, 180)
+}
+
+.MainSection:before {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 0;
+    height: 30%;
+    border-left: 1px solid black;
+    transition: 0.4s;
+}
+
+.MainSection:hover::before {
+    left: -1rem;
+    top: 0;
+    height: 100%;
+    border-left: 5px dashed black;
 }
 
 //side panel
 .SidePanel {
     min-width: 25%;
+    max-width: 30%;
     margin: 0 $s-size;
     background: lighten($light, 4);
     padding: $m-size;
@@ -23,6 +44,7 @@
 }
 
 .SidePanel:hover {
+    min-width: 30%;
     background: lighten($light, 7);
     border-radius: 0;
     .SidePanel--content {
@@ -35,6 +57,52 @@
 .MainPanel {
     flex-grow: 1;
     margin: 0 $s-size;
-    background: darken($lighter, 3);
+    background: darken($lighter, 5);
+    border-radius: $m-size;
     padding: $m-size;
+    transition: 0.3s;
+    .MainPanel--content {
+        transition: ease-in-out 0.1s;
+    }
+}
+
+.MainPanel:hover {
+    border-radius: 0;
+    background: darken($lighter, 1);
+    .MainPanel--content {
+        word-spacing: 3px;
+        letter-spacing: 1px;
+        transform: scale(1.05);
+        padding: 0 $l-size;
+    }
+}
+
+.MainPanel--content_sub {
+    position: relative;
+    padding: $m-size 0;
+    transition: 0.4s;
+}
+
+.MainPanel--content_sub:hover {
+    transform: scale(1.05);
+    padding: $m-size $xl-size;
+}
+
+.MainPanel--content_sub:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 0;
+    width: 0;
+    background: lighten($intermidiate, 57);
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.MainPanel--content_sub:hover:before {
+    top: 0;
+    left: 0%;
+    height: 100%;
+    width: 95%;
 }
