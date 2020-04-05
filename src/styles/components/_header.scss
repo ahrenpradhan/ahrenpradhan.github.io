@@ -1,5 +1,6 @@
 .Header {
-    text-transform: uppercase;;
+    text-transform: uppercase;
+    ;
     display: flex;
     flex-direction: row;
     background: $darker;
@@ -15,10 +16,12 @@
     font-weight: 700;
     transition: 0.4s;
 }
+
 .Header--title:hover {
     color: $dark;
     transform: scale(1.8);
 }
+
 .Header--title::before {
     content: '';
     position: absolute;
@@ -30,14 +33,15 @@
     transition: 0.5s;
     height: 0;
 }
+
 .Header--title:hover:before {
     height: 2rem;
     background: $lighter;
-    left: 33%;
-    width: 33%;
+    left: 30%;
+    width: 40%;
     z-index: -1;
+    border-radius: $xs-size;
 }
-
 
 .Header--nav_bar {
     margin: 0;
@@ -49,20 +53,22 @@
 
 .Header--nav_link {
     position: relative;
-    padding: $m-size ;
+    padding: $m-size;
     z-index: 1;
     transform: scale(0.8);
     cursor: pointer;
     transition: 0.4s;
 }
+
 .Header--nav_link:hover {
     transform: scale(0.9);
     color: $dark;
 }
+
 .Header--nav_link:active {
     color: $light;
     z-index: 2;
-    transition: none;   
+    transition: none;
 }
 
 .Header--nav_link::before {
@@ -73,9 +79,10 @@
     width: 80%;
     border-top: 1px solid $dark;
     opacity: 0;
-    transition:border-color 0.5s ,opacity 0.2s, border 0.4s, left 0.6s, width 0.6s;
+    transition: border-color 0.5s, opacity 0.2s, border 0.4s, left 0.6s, width 0.6s;
     z-index: -1;
 }
+
 .Header--nav_link:hover:before {
     left: 0;
     width: 100%;
@@ -95,6 +102,7 @@
     transition: opacity 0.1s, border 0.4s, left 0.6s, width 0.6s;
     z-index: -1;
 }
+
 .Header--nav_link:hover:after {
     left: 0;
     width: 100%;

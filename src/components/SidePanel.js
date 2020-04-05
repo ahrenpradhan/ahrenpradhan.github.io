@@ -1,18 +1,9 @@
 import React from 'react';
 
-export default () => (
+export default (props) => (
     <div className='SidePanel'>
-        this is the side panel
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <div className="SidePanel--content">
+            {props.data}
+        </div>
     </div>
 )

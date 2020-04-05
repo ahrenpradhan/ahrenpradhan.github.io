@@ -6,10 +6,12 @@
     text-align: center;
     padding: $m-size $xxl-size;
 }
-.MyPersonalContent_underline{
+
+.MyPersonalContent_underline {
     position: relative;
 }
-.MyPersonalContent_underline:before{
+
+.MyPersonalContent_underline:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -19,23 +21,35 @@
     // opacity: 1;
     transition: 0.4s;
 }
-.MyPersonalContent_underline:hover:before{
+
+.MyPersonalContent_underline:hover:before {
     border-bottom: 1px dashed $light;
     left: 20%;
     width: 60%;
 }
+
 .MyPersonalContent--intro {
     width: 60%;
 }
+
 .MyPersonalContent--intro_name {
     transform: scale(1.2);
     font-size: $xxl-size;
+    transition: 0.3s;
 }
+
+.MyPersonalContent--intro_name:hover {
+    color: $light;
+    letter-spacing: 2px;
+    // transform: scale(1.4);
+}
+
 .MyPersonalContent--intro_designation {
     padding: $m-size $xxl-size;
     letter-spacing: 2px;
     font-weight: 650;
 }
+
 .MyPersonalContent--intro_note {
     margin: 0 auto;
     width: 80%;
@@ -46,16 +60,19 @@
     word-spacing: 4px;
     transition: 0.3s;
 }
+
 .MyPersonalContent--intro_note:hover {
     background: lighten($darker, 6);
 }
+
 .MyPersonalContent--image {
     margin-left: $xl-size;
-    background: lighten($darker,5);
+    background: lighten($darker, 5);
     border-radius: 1rem;
     flex-grow: 1;
     transition: 0.4s;
 }
+
 .MyPersonalContent--image:hover {
     transform: scale(1.1);
 }

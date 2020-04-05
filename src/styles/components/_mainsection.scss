@@ -6,16 +6,35 @@
 
 //side panel
 .SidePanel {
-    width: 25%;
+    min-width: 25%;
     margin: 0 $s-size;
-    background: lighten($light,7);
+    background: lighten($light, 4);
     padding: $m-size;
+    font-size: $xl-size;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 0.3s;
+    border-radius: $m-size;
+    .SidePanel--content {
+        text-align: center;
+        transition: 0.3s;
+    }
+}
+
+.SidePanel:hover {
+    background: lighten($light, 7);
+    border-radius: 0;
+    .SidePanel--content {
+        transform: scale(1.4);
+        letter-spacing: 3px;
+    }
 }
 
 //main panel
 .MainPanel {
     flex-grow: 1;
     margin: 0 $s-size;
-    background: darken($lighter,3);
+    background: darken($lighter, 3);
     padding: $m-size;
 }

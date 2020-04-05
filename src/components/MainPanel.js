@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default () => (
+export default (props) => (
     <div className='MainPanel'>
-        this is the main panel
+        {props.data}
     </div>
 )

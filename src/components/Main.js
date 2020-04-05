@@ -21,12 +21,13 @@ export default class Main extends Component {
         Name: "temp_name",
         Designation: "temp_designation",
         Note: "temp_note",
-        Header: "MY SPACE"
+        Header: "MY SPACE",
+        AdditionalDetails : null
     }
     componentDidMount() {
         const test = firebase.database().ref().child('PersonalInfo');
         test.on('value', snap => {
-            console.log(snap.val())
+            // console.log(snap.val())
             this.setState({
                 Name: snap.val().Name,
                 Designation: snap.val().Designation,
@@ -37,6 +38,13 @@ export default class Main extends Component {
         header.on('value', snap => {
             this.setState({
                 Header : snap.val().Title
+            })
+        })
+        const additionalData = firebase.database().ref().child('AdditionalDetails');
+        additionalData.on('value', snap => {
+            console.log(snap.val())
+            this.setState({
+                AdditionalDetails : snap.val()
             })
         })
     }
@@ -59,7 +67,7 @@ export default class Main extends Component {
                     </div>
                     <div className="MyPersonalContent--image"></div>
                 </div>
-                <MainSection />
+                {!!this.state.AdditionalDetails && <MainSection AdditionalDetails={this.state.AdditionalDetails}/>}
             </div>
         )
     }
